@@ -1,0 +1,115 @@
+.contactForm-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 2rem;
+}
+
+.title-contactForm {
+    color: whitesmoke;
+    font-family: poppins;
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding-top: 1rem;
+}
+
+.description-contactForm {
+    color: whitesmoke;
+    font-family: poppins;
+    font-size: 1.25rem;
+    font-weight: 300;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+
+.name,
+.email,
+.msg {
+    background-color: rgba(245, 245, 245, 0.2);
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    padding: 1rem 1rem;
+    width: 80vw;
+    margin: 1rem;
+    font-size: 1rem;
+}
+
+.name::placeholder,
+.email::placeholder,
+.msg::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+    opacity: 1;
+    font-size: 1rem;
+}
+
+.submitBtn {
+    background-color: #CD3C2C;
+    color: whitesmoke;
+    width: 11rem;
+    height: 4rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: Montserrat, sans-serif;
+    border: none;
+    border-radius: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+    transition: 300ms;
+    margin-top: 2rem;
+}
+
+.submitBtn:hover {
+    background-color: rgba(205, 60, 44, 0.6);
+}
+
+/* ipad */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .title-contactForm {
+        font-size: 3.5rem;
+    }
+
+    .description-contactForm {
+        font-size: 1.5rem;
+    }
+
+    .name,
+    .email,
+    .msg {
+        padding: 1.5rem 1rem;
+        font-size: 1.5rem;
+    }
+
+    .name::placeholder,
+    .email::placeholder,
+    .msg::placeholder {
+        font-size: 1.5rem;
+    }
+}
+
+/* laptop */
+@media (min-width: 1024px) {
+    .contactForm {
+        width: 90vw;
+        max-width: 50rem;
+    }
+
+    .name,
+    .email,
+    .msg {
+        width: 100%;
+    }
+}
