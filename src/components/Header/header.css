@@ -156,11 +156,15 @@ img {
     }
     
     img {
-        width: calc(36rem - 6rem);
+        width: calc(34rem - 6rem);
         height: 41rem; 
         margin-top: 6rem;
     }
     
+    .image-container::after {
+        background: none;
+    }
+
     .header-text {
         font-size: 3.5rem;
     }
