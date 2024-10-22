@@ -4,7 +4,7 @@
     align-items: center;
     text-align: center;
     flex-direction: column;
-    margin: 2rem;
+    height: 100vh;
 }
 
 .title-contactForm {
@@ -12,7 +12,6 @@
     font-family: poppins;
     font-size: 2.5rem;
     font-weight: 600;
-    padding-top: 1rem;
 }
 
 .description-contactForm {
@@ -80,6 +79,7 @@
 @media (min-width: 768px) and (max-width: 1024px) {
     .title-contactForm {
         font-size: 3.5rem;
+        padding-top: 2rem;
     }
 
     .description-contactForm {
@@ -102,15 +102,65 @@
 
 /* laptop */
 @media (min-width: 1024px) {
+    .title-contactForm {
+        padding-top: 8rem;
+    }
+    .contactForm-container {
+     margin-top: 7rem;
+    }
+
     .contactForm {
         width: 90vw;
         max-width: 50rem;
-
     }
 
     .name,
     .email,
     .msg {
         width: 100%;
+    }
+
+    .submitBtn {
+        margin-bottom: 3rem;
+    }
+}
+
+/* desktop */
+@media (min-width: 1400px) {
+    .contactForm-container {
+        margin-top: rem;
+       }
+    .title-contactForm {
+        font-size: 4rem;
+    }
+
+    .description-contactForm {
+        font-size: 1.75rem;
+    }
+
+    .contactForm {
+        width: 80vw;
+        max-width: 60rem; 
+    }
+
+    .name,
+    .email,
+    .msg {
+        width: 100%; 
+        padding: 1rem 1.5rem;
+        font-size: 1.25rem; 
+    }
+
+    .name::placeholder,
+    .email::placeholder,
+    .msg::placeholder {
+        font-size: 1.25rem;
+    }
+
+    .submitBtn {
+        width: 13rem; 
+        height: 5rem;
+        font-size: 2rem; 
+        margin-bottom: 5rem;
     }
 }

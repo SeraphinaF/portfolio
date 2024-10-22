@@ -1,5 +1,8 @@
-.App{
+*{
     margin: 0;
+}
+
+.App{
     padding: 0;
     background-color: #122337;
     overflow-x: hidden;

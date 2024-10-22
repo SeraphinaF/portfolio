@@ -5,11 +5,11 @@ import Contact from './screens/Contact/Contact';
 
 function App() {
   return (
-    <div className="App">
+    <section className="App">
       <Home/>
       <Portfolio/>
       <Contact/>
-    </div>
+    </section>
   );
 }
 

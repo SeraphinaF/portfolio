@@ -24,7 +24,7 @@
 }
 
 .header-about {
-    text-align: center; /* Center text */
+    text-align: center; 
     width: 100%;
     max-width: 90vw;
     font-size: 1.25rem;
@@ -66,22 +66,31 @@ img {
 }
 
 .contact-btn {
-    background-color: #CD3C2C;
-    color: whitesmoke;
-    width: 11rem;
+    background-color: white;
+    color: black;
+    width: 14rem;
     height: 4rem;
     font-size: 1.5rem;
-    font-weight: 700;
-    font-family: poppins;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
     border: none;
     border-radius: 20rem;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
     text-align: center;
     z-index: 2; 
     transition: 300ms;
-}
+    position: relative;
+    gap: 1rem;
+  }
+  
+  .contact-icon {
+    height: 1.7rem;
+    width: 1.7rem;
+    margin:0;
+  }
+  
 /* ipad */
 @media (min-width: 768px) and (max-width: 1024px){
     .header-container {
@@ -132,11 +141,15 @@ img {
     
     .contact-btn {
         margin-top: .25rem;
+        width: 16rem;
+        height: 5rem;
+        font-size: 1.75rem;
+        font-weight: 600;
     }
 }
 
 /* laptop */
-@media (min-width: 1028px) {
+@media (min-width: 1028px){
     .header-container {
         flex-direction: row;
         align-items: center; 
@@ -175,3 +188,11 @@ img {
 }
 
 /* desktop */
+
+@media(min-width: 1400px){ 
+    img {
+        width: calc(45rem - 6rem);
+        height: 55rem; 
+    }
+}
+

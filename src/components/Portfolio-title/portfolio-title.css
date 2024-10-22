@@ -51,7 +51,7 @@
         display: flex;
         flex-direction: column;
         position: relative;
-        height: 12rem;
+        height: 14rem;
         justify-content: normal;
         align-items: normal;
     }
@@ -62,7 +62,7 @@
         font-size: 2.9rem;
         width: 200%;
         position: absolute;
-        margin-top: 4rem;
+        margin-top: 6rem;
         animation: infiniteScroll 35s linear infinite;
         align-items: center;
     }
@@ -73,12 +73,12 @@
         font-family: monoton;
         font-weight: 400;
         flex-shrink: 0;
-        margin-right: 1rem;
     }
     
     .horizontal-scrolling-items__item-top {
         font-size: 6rem;
         margin-top: 1.3rem;
+        margin-left: 1rem;
     }
 
     .horizontal-scrolling-items__item-bottom {
@@ -88,5 +88,27 @@
     .horizontal-scrolling-items__item-top:nth-child(n+2),
     .horizontal-scrolling-items__item-bottom:nth-child(n+2) {
         display: contents;
+    }
+}
+
+/* desktop */
+
+@media(min-width: 1400px){
+
+    .container-portfolio-title {
+        height: 17rem;
+    }
+
+    .horizontal-scrolling-items-top,
+    .horizontal-scrolling-items-bottom {
+        margin-top: 5rem;
+    }
+
+    .horizontal-scrolling-items__item-top {
+        font-size: 9rem;
+    }
+
+    .horizontal-scrolling-items__item-bottom {
+        font-size: 9rem;
     }
 }
