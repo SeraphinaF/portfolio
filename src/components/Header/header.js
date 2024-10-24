@@ -17,7 +17,7 @@ const Header = () => {
         </Link>
       </div>
       <div className='image-container'>
-        <img src={headerImage} className='image' alt="image of Seraphina Fortunato" />
+        <img src={headerImage} className='image' alt="Seraphina Fortunato, web developer" />
       </div>
     </section>
   );
